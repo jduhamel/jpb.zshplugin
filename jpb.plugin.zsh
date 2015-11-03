@@ -472,6 +472,8 @@ fi
 
 # I use grc to colorize some command output for clarity.
 # brew install grc to check it out.
+if [ -x grc ]; then
+
 GRC=$(which grc)
 
 if [ "$TERM" != dumb ] && [ -n "$GRC" ]; then
@@ -607,6 +609,7 @@ if [ "$TERM" != dumb ] && [ -n "$GRC" ]; then
     }
   fi
 
+fi
 fi
 
 # Yes, these are a pain to customize. Fortunately, Geoff Greer made an online
