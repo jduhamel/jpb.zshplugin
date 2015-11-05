@@ -464,11 +464,7 @@ function 600() {
 }
 
 # Lesspipe
-LESSPIPE=`which lesspipe.sh`
-if [ -n "${LESSPIPE}" ]; then
-  export LESSOPEN="| ${LESSPIPE} %s"
-  export LESS=' -R '
-fi
+ export LESS=' -R '
 
 # I use grc to colorize some command output for clarity.
 # brew install grc to check it out.
